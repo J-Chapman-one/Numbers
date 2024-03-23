@@ -2,22 +2,23 @@
 #then ensure all numbers are in integer(i.e number format)
 #carry out four caclulations as respective four variable names refer to and print the output from these four caclualtions
 
-x = input("Enter a number: ")
-y = input("Enter a different number: ")
-z = input("Enter a different number you have not entered before: ")
+while True:
+    try:
+        x = int(input("Enter a number: "))
+        y = int(input("Enter a different number: "))
+        z = int(input("Enter a different number you have not entered before: "))
 
-x = int(x) #Feedback - It's helpful to validate that the numbers are real integers
-y = int(y)
-z = int(z)
+        total = x + y + z
+        firstnum_minus_second = x - y
+        third_num_times_first_num = x * z
+        all_nums_dived_by_third_num = total / z
 
-total = x+y+z
-print (total)
+        print("Total of numbers:", total)
+        print("First number minus second number:", firstnum_minus_second)
+        print("Third number times first number:", third_num_times_first_num)
+        print("All numbers divided by third number:", all_nums_dived_by_third_num)
 
-firstnum_minus_second = x-y
-print (firstnum_minus_second)
+        break  # Exit the loop if input is successful
 
-third_num_times_first_num = x*z
-print (third_num_times_first_num)
-
-all_nums_dived_by_third_num = total/z
-print (all_nums_dived_by_third_num)
+    except ValueError:
+        print("One or more inputs are not valid integers. Please re-enter in number format.")
