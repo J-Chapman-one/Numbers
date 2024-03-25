@@ -10,7 +10,7 @@ x = int(x) #Feedback - It's helpful to validate that the numbers are real intege
 y = int(y)
 z = int(z)
 
-total = x+y+z
+total = x + y + z
 print (total)
 
 firstnum_minus_second = x-y
