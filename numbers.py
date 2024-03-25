@@ -11,7 +11,7 @@ y = int(y)
 z = int(z)
 
 total = x + y + z
-print (total)
+print (total).rd(2)
 
 firstnum_minus_second = x-y
 print (firstnum_minus_second)
@@ -20,4 +20,4 @@ third_num_times_first_num = x*z
 print (third_num_times_first_num)
 
 all_nums_dived_by_third_num = total/z
-print (all_nums_dived_by_third_num)
+print (round(all_nums_dived_by_third_num),2)
